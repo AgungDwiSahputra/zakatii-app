@@ -19,4 +19,7 @@ Route::get('/', function () {
 Route::get('/zis-list', function () {
     return view('zis-list');
 });
+Route::get('/overview-zis', function () {
+    return view('overview-zis');
+});
 
