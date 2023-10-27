@@ -7,16 +7,11 @@
     <title>Zis Lists</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
-    {{-- FONT --}}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     {{-- Local CSS --}}
     <link rel="stylesheet" href="{{ asset('assets/css/zist-list.css?v=1.0') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/landing.css') }}">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
@@ -91,25 +86,42 @@
                     </div>
                     <div class="pilihan d-flex align-items-center justify-content-end">
                         <ul class="nav nav-pills">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">
+                            <li class="nav-item active" role="zakat">
+                                <a class="nav-link active" href="#zakat-fitrah" role="tab" data-bs-toggle="tab">
                                     <img src="{{ asset('assets/icons/Rice.png') }}" alt="Rice">
                                     <p>Zakat Fitrah</p>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
+                            <li class="nav-item" role="zakat">
+                                <a class="nav-link" href="#zakat-penghasilan" role="tab" data-bs-toggle="tab">
                                     <img src="{{ asset('assets/icons/Treasure.png') }}" alt="Tresure">
                                     <p>Zakat Penghasilan</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="#zakat-maal" role="tab" data-bs-toggle="tab">
                                     <img src="{{ asset('assets/icons/Contractor.png') }}" alt="Contractor">
-                                    <p>Zakat Mall</p>
+                                    <p>Zakat Maal</p>
                                 </a>
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container w-100" id="content-zis-list">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tab-content">
+                    <div role="zakat" class="tab-pane active" id="zakat-fitrah">
+                        <h1>INI ZAKAT FITRAH</h1>
+                    </div>
+                    <div role="zakat" class="tab-pane" id="zakat-penghasilan">
+                        <h1>INI ZAKAT PENGHASILAN</h1>
+                    </div>
+                    <div role="zakat" class="tab-pane" id="zakat-maal">
+                        <h1>INI ZAKAT MAAL</h1>
                     </div>
                 </div>
             </div>
