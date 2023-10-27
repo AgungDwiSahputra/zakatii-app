@@ -203,10 +203,172 @@
                         </div>
                     </div>
                     <div role="zakat" class="tab-pane" id="zakat-penghasilan">
-                        <h1>INI ZAKAT PENGHASILAN</h1>
+                        <div class="kalkulator text-center">
+                            <a class="btn btn-success btn-zakatii" data-bs-toggle="collapse" href="#kalkulator-zakat-fitrah" role="button" aria-expanded="false" aria-controls="kalkulator-zakat-fitrah">
+                                <i class="fa-solid fa-calculator fa-xl"></i>
+                                <span class="ms-2">Kalkulator Zakat Fitrah</span>
+                            </a>
+                            <div class="collapse" id="kalkulator-zakat-fitrah">
+                                <div class="card card-body bg-transparent mx-auto mt-1 d-flex align-items-center flex-row">
+                                    <form class="text-start w-sm-100 w-50" method="POST" action="#">
+                                        <div class="mb-3">
+                                            <label for="nilai-asset" class="form-label">Nilai emas, perak, dan/atau permata <span class="text-danger">*</span></label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="nilai-asset">Rp.</span>
+                                                <input id="numericInput1" name="nilai-asset" type="text" class="form-control" placeholder="1.000.000" aria-label="nilai" aria-describedby="nilai-asset">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="nilai-matauang" class="form-label">Uang tunai, tabungan, deposito <span class="text-danger">*</span></label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="nilai-matauang">Rp.</span>
+                                                <input id="numericInput2" name="nilai-matauang" type="text" class="form-control" placeholder="1.000.000" aria-label="nilai" aria-describedby="nilai-matauang">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="nilai-properti" class="form-label">Kendaraan, rumah, aset, dll <span class="text-danger">*</span></label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="nilai-properti">Rp.</span>
+                                                <input id="numericInput3" name="nilai-properti" type="text" class="form-control" placeholder="1.000.000" aria-label="nilai" aria-describedby="nilai-properti">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="nilai-hutang" class="form-label">Jumlah hutang/cicilan (optional)</label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="nilai-hutang">Rp.</span>
+                                                <input id="numericInput4" name="nilai-hutang" type="text" class="form-control" placeholder="1.000.000" aria-label="nilai" aria-describedby="nilai-hutang">
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-success btn-zakatii">Hitung</button>
+                                    </form>
+                                    <div class="total d-flex flex-column align-items-center justify-content-center w-sm-100 w-50 ms-5">
+                                        <span>Hasil Perhitungan</span>
+                                        <h3>Rp. 100.000.000</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter d-flex align-items-center justify-content-between mt-4 mb-3">
+                            <div class="filter-button d-flex align-items-center">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="#">Sedang Trend</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Paling Rendah</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Paling Tinggi</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter-search">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn ps-0" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg text-white"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="list-item row justify-content-center">
+                            @for ($i = 0; $i < 12;$i++)
+                                <div class="col-5 card-zis d-flex align-items-center justify-content-start">
+                                    <img src="{{ asset('assets/img/hero-image.jpg') }}" alt="Cover ZIS" class="img-zis img-thumbnail rounded">
+                                    <div class="deskripsi ms-3">
+                                        <h5 class="m-0">Sucikan Hati dengan Zakat Mal</h5>
+                                        <span>Baznas</span>
+                                        <div class="progress my-2" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 25%"></div>
+                                        </div>
+                                        <span>Total</span>
+                                        <h4 class="m-0">Rp. 20.000.000</h4>
+                                    </div>
+                                </div>
+                            @endfor
+                        </div>
                     </div>
                     <div role="zakat" class="tab-pane" id="zakat-maal">
-                        <h1>INI ZAKAT MAAL</h1>
+                        <div class="kalkulator text-center">
+                            <a class="btn btn-success btn-zakatii" data-bs-toggle="collapse" href="#kalkulator-zakat-fitrah" role="button" aria-expanded="false" aria-controls="kalkulator-zakat-fitrah">
+                                <i class="fa-solid fa-calculator fa-xl"></i>
+                                <span class="ms-2">Kalkulator Zakat Fitrah</span>
+                            </a>
+                            <div class="collapse" id="kalkulator-zakat-fitrah">
+                                <div class="card card-body bg-transparent mx-auto mt-1 d-flex align-items-center flex-row">
+                                    <form class="text-start w-sm-100 w-50" method="POST" action="#">
+                                        <div class="mb-3">
+                                            <label for="nilai-asset" class="form-label">Nilai emas, perak, dan/atau permata <span class="text-danger">*</span></label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="nilai-asset">Rp.</span>
+                                                <input id="numericInput1" name="nilai-asset" type="text" class="form-control" placeholder="1.000.000" aria-label="nilai" aria-describedby="nilai-asset">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="nilai-matauang" class="form-label">Uang tunai, tabungan, deposito <span class="text-danger">*</span></label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="nilai-matauang">Rp.</span>
+                                                <input id="numericInput2" name="nilai-matauang" type="text" class="form-control" placeholder="1.000.000" aria-label="nilai" aria-describedby="nilai-matauang">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="nilai-properti" class="form-label">Kendaraan, rumah, aset, dll <span class="text-danger">*</span></label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="nilai-properti">Rp.</span>
+                                                <input id="numericInput3" name="nilai-properti" type="text" class="form-control" placeholder="1.000.000" aria-label="nilai" aria-describedby="nilai-properti">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="nilai-hutang" class="form-label">Jumlah hutang/cicilan (optional)</label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="nilai-hutang">Rp.</span>
+                                                <input id="numericInput4" name="nilai-hutang" type="text" class="form-control" placeholder="1.000.000" aria-label="nilai" aria-describedby="nilai-hutang">
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-success btn-zakatii">Hitung</button>
+                                    </form>
+                                    <div class="total d-flex flex-column align-items-center justify-content-center w-sm-100 w-50 ms-5">
+                                        <span>Hasil Perhitungan</span>
+                                        <h3>Rp. 100.000.000</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter d-flex align-items-center justify-content-between mt-4 mb-3">
+                            <div class="filter-button d-flex align-items-center">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="#">Sedang Trend</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Paling Rendah</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Paling Tinggi</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter-search">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn ps-0" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg text-white"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="list-item row justify-content-center">
+                            @for ($i = 0; $i < 12;$i++)
+                                <div class="col-5 card-zis d-flex align-items-center justify-content-start">
+                                    <img src="{{ asset('assets/img/hero-image.jpg') }}" alt="Cover ZIS" class="img-zis img-thumbnail rounded">
+                                    <div class="deskripsi ms-3">
+                                        <h5 class="m-0">Sucikan Hati dengan Zakat Mal</h5>
+                                        <span>Baznas</span>
+                                        <div class="progress my-2" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 25%"></div>
+                                        </div>
+                                        <span>Total</span>
+                                        <h4 class="m-0">Rp. 20.000.000</h4>
+                                    </div>
+                                </div>
+                            @endfor
+                        </div>
                     </div>
                 </div>
             </div>
