@@ -26,7 +26,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="bg-white p-3 rounded my-2 d-flex align-items-center justify-content-between d-bloack d-lg-none">
+                    <li class="bg-white p-3 rounded my-2 d-flex align-items-center justify-content-between d-block d-lg-none">
                         <a class="dropdown-item profile" href="#">
                             <i class="fa-solid fa-user fa-xl align-middle"></i>
                             <h4 class="d-inline-block m-0 ms-2 align-middle">Joko Sembung</h4>
