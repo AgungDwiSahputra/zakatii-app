@@ -26,6 +26,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="bg-white p-3 rounded my-2 d-flex align-items-center justify-content-between">
+                        <a class="dropdown-item profile" href="#">
+                            <i class="fa-solid fa-user fa-xl align-middle"></i>
+                            <h4 class="d-inline-block m-0 ms-2 align-middle">Joko Sembung</h4>
+                        </a>
+                        <a class="dropdown-item text-end" href="#"><i class="fa-solid fa-right-from-bracket fa-lg ml-auto"></i></a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">HOME</a>
                     </li>
@@ -46,7 +53,7 @@
                     </li>
                 </ul>
                 <div class="list-profile">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav d-none d-lg-block">
                         <li class="nav-item dropdown" style="margin-right: 8px">
                             <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-bell fa-lg"></i>
@@ -84,7 +91,7 @@
     <div class="container" id="pilihan-zakat">
         <div class="row">
             <div class="col-md-12 d-flex justify-content-center">
-                <div class="kotak-pilihan-zakat d-flex align-items-center justify-content-between">
+                <div class="kotak-pilihan-zakat d-flex align-items-center justify-content-between flex-column flex-lg-row">
                     <div class="copy">
                         <h2>Pilihan Zakat</h2>
                     </div>
@@ -164,7 +171,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="filter d-flex align-items-center justify-content-between mt-4 mb-3">
+                        <div class="filter d-flex align-items-center justify-content-between mt-4 mb-3 flex-column-reverse flex-lg-row">
                             <div class="filter-button d-flex align-items-center">
                                 <ul class="nav">
                                     <li class="nav-item">
@@ -187,7 +194,7 @@
                         </div>
                         <div class="list-item row justify-content-center">
                             @for ($i = 0; $i < 12;$i++)
-                                <div class="col-5 card-zis d-flex align-items-center justify-content-start">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 card-zis d-flex align-items-center justify-content-start">
                                     <img src="{{ asset('assets/img/hero-image.jpg') }}" alt="Cover ZIS" class="img-zis img-thumbnail rounded">
                                     <div class="deskripsi ms-3">
                                         <h5 class="m-0">Sucikan Hati dengan Zakat Mal</h5>
@@ -248,7 +255,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="filter d-flex align-items-center justify-content-between mt-4 mb-3">
+                        <div class="filter d-flex align-items-center justify-content-between mt-4 mb-3 flex-column-reverse flex-lg-row">
                             <div class="filter-button d-flex align-items-center">
                                 <ul class="nav">
                                     <li class="nav-item">
@@ -271,7 +278,7 @@
                         </div>
                         <div class="list-item row justify-content-center">
                             @for ($i = 0; $i < 12;$i++)
-                                <div class="col-5 card-zis d-flex align-items-center justify-content-start">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 card-zis d-flex align-items-center justify-content-start">
                                     <img src="{{ asset('assets/img/hero-image.jpg') }}" alt="Cover ZIS" class="img-zis img-thumbnail rounded">
                                     <div class="deskripsi ms-3">
                                         <h5 class="m-0">Sucikan Hati dengan Zakat Mal</h5>
@@ -332,7 +339,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="filter d-flex align-items-center justify-content-between mt-4 mb-3">
+                        <div class="filter d-flex align-items-center justify-content-between mt-4 mb-3 flex-column-reverse flex-lg-row">
                             <div class="filter-button d-flex align-items-center">
                                 <ul class="nav">
                                     <li class="nav-item">
@@ -355,7 +362,7 @@
                         </div>
                         <div class="list-item row justify-content-center">
                             @for ($i = 0; $i < 12;$i++)
-                                <div class="col-5 card-zis d-flex align-items-center justify-content-start">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 card-zis d-flex align-items-center justify-content-start">
                                     <img src="{{ asset('assets/img/hero-image.jpg') }}" alt="Cover ZIS" class="img-zis img-thumbnail rounded">
                                     <div class="deskripsi ms-3">
                                         <h5 class="m-0">Sucikan Hati dengan Zakat Mal</h5>
@@ -375,7 +382,7 @@
         </div>
     </div>
     <div class="container" id="three-pilar">
-        <div class="row text-white">
+        <div class="row text-white justify-content-center">
             <div class="col-4 list-pilar text-center pt-4 px-4">
                 <i class="fa-solid fa-sack-dollar fa-2xl mb-4"></i><br>
                 <b>Bebas Riba</b>
@@ -395,13 +402,13 @@
     </div>
     <footer class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="list-contact col-md-4">
                 <h5>Contact Us</h5>
                 Jl. Arjuna Utara No.9 Duri Kepa, Kec. Kebon Jeruk, Kota Jakarta Barat, DKI Jakarta 11510<br>
                 +62 821-1086-0615<br>
                 demo@demo.id
             </div>
-            <div class="col-md-4 ps-5">
+            <div class="list-contact col-md-4 ps-5">
                 <h5>Information</h5>
                 <ul>
                     <li><a href="#" class="text-black nav-link">Product Support</a></li>
@@ -410,7 +417,7 @@
                     <li><a href="#" class="text-black nav-link">Affiliate</a></li>
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="list-contact col-md-4">
                 <h5>Costumer Service</h5>
                 <ul>
                     <li><a href="#" class="text-black nav-link">Help Center</a></li>
