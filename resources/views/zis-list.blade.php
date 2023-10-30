@@ -53,7 +53,7 @@
                     </li>
                 </ul>
                 <div class="list-profile">
-                    <ul class="navbar-nav d-none d-lg-block">
+                    <ul class="navbar-nav d-none d-lg-flex">
                         <li class="nav-item dropdown" style="margin-right: 8px">
                             <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-bell fa-lg"></i>

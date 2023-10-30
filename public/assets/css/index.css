@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Sarabun';
+    font-size: 16px;
+    font-weight: 400;
+}
+@media (max-width:992px){
+    *{
+        font-size: 12px;
+    }
+}
+body{
+    background-color: #EDF1D6;
+}
+.navbar{
+    background: #EDF1D6;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.navbar .navbar-brand{
+    font-weight: 700;
+}
+.dropdown-menu[data-bs-popper] {
+    left: -55%;
+}
+.dropdown-item.profile h5 {
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.btn-zakatii{
+    background-color: #609966;
+    color: white;
+    padding: 8px 16px;
+    border: 1px solid #528a58;
+    transition: 0.2s ease-in-out;
+}
+.btn-zakatii:hover{
+    background-color: #609966;
+    color: white;
+    padding: 8px 16px;
+    border: 1px solid #528a58;
+    box-shadow: 0px 7px 10px -2px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+    transition: 0.2s ease-in-out;
+}
+.btn-zakatii-2{
+    border-radius: 27px;
+    background: #EDF1D6;
+    color: black;
+    padding: 8px 25px;
+    border: 1px solid #EDF1D6;
+    transition: 0.2s ease-in-out;
+    /* font */
+    font-weight: 700;
+}
+.btn-zakatii-2:hover{
+    border-radius: 27px;
+    background: #EDF1D6;
+    color: black;
+    padding: 8px 25px;
+    border: 1px solid #EDF1D6;
+    box-shadow: 0px 7px 10px -2px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+    transition: 0.2s ease-in-out;
+}
+
+/* Hero Section */
+    #hero-section{
+        position: relative;
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url('../img/hero-image.jpg');
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:top center;
+        max-width: 1750px;
+        height: 92vh;
+    }
+    #hero-section .copy{
+        position: absolute;
+        padding-left: 100px;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    #hero-section .copy h1{
+        color: #FFF;
+        font-size: 3em;
+        font-weight: 700;
+    }
+    #hero-section .copy p{
+        color: #FFF;
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    @media (max-width:992px){
+        #hero-section .copy{
+            padding-left: unset;
+            text-align: center;
+        }
+    }
+    @media (max-width:767.92px){
+        #hero-section .copy h1{
+            color: #FFF;
+            font-size: 2em;
+            font-weight: 700;
+        }
+        #hero-section .copy p{
+            color: #FFF;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+    }
+/* END Hero Section */
+
+/* Menu Amalan */
+    #menu-amalan{
+        padding: 80px 0 20px;
+    }
+    #menu-amalan h3{
+        font-weight: 700;
+    }
+    #menu-amalan .amalan a{
+        text-decoration: none;
+    }
+    #menu-amalan .list-amalan{
+        width: 300px;
+        border-radius: 8px;
+        padding: 20px 0;
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+    #menu-amalan .list-amalan p{
+        color: #000;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    @media (max-width:992px){
+        #menu-amalan{
+            padding: 30px 10px;
+        }
+        #menu-amalan h3{
+            font-size: 22px;
+            text-align: center;
+            font-weight: 700;
+        }
+        #menu-amalan .amalan{
+            display: inline-block !important;
+            width: 100%;
+        }
+        #menu-amalan .list-amalan p{
+            font-size: 18px;
+        }
+    }
+/* END Menu Amalan */
+
+/* Penggalangan Dana */
+    #penggalangan-dana{
+        padding: 80px 0;
+    }
+    #penggalangan-dana h3{
+        font-weight: 700;
+    }
+    #penggalangan-dana .penggalangan a{
+        text-decoration: none;
+    }
+    #penggalangan-dana .list-penggalangan{
+        width: 238px;
+        height: 357px;
+        border-radius: 8px;
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+    #penggalangan-dana .list-penggalangan p{
+        color: #000;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    @media (max-width:992px){
+        #penggalangan-dana{
+            padding: 30px 10px;
+        }
+        #penggalangan-dana h3{
+            font-size: 22px;
+            text-align: center;
+            font-weight: 700;
+        }
+        #penggalangan-dana .penggalangan{
+            display: inline-block !important;
+            width: 100%;
+        }
+        #penggalangan-dana .list-penggalangan p{
+            font-size: 18px;
+        }
+    }
+/* END Penggalangan Dana */
+
+/* Blogs */
+    #blogs{
+        padding: 80px 0;
+    }
+    #blogs h3{
+        font-weight: 700;
+    }
+    #blogs .blogs a{
+        text-decoration: none;
+    }
+    #blogs .list-blogs{
+        width: 396px;
+        height: 396px;
+        border-radius: 8px;
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+    #blogs .list-blogs p{
+        color: #000;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    @media (max-width:992px){
+        #blogs{
+            padding: 70px 10px;
+        }
+        #blogs h3{
+            font-size: 22px;
+            text-align: center;
+            font-weight: 700;
+        }
+        #blogs .blogs{
+            display: inline-block !important;
+            width: 100%;
+        }
+        #blogs .list-blogs p{
+            font-size: 18px;
+        }
+    }
+/* End Blogs */
+
+#three-pilar{
+    background-color: #609966;
+    max-width: 1750px;
+    margin: 0 auto;
+    padding: 20px 180px;
+}
+footer.container{
+    padding: 80px 200px;
+}
+@media (max-width:992px){
+    #three-pilar{
+        padding: 20px 10px;
+    }
+    #three-pilar .list-pilar{
+        width: 49%;
+    }
+    footer.container{
+        padding: 50px;
+    }
+    footer.container .list-contact{
+        padding: 10px 0 !important;
+    }
+}
+footer ul{
+    padding-left: 0;
+}
+footer ul li{
+    list-style: none;
+}
