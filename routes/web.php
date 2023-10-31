@@ -15,11 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('index');
 Route::get('/zis-list', function () {
     return view('zis-list');
-});
+})->name('zis-list');
 Route::get('/overview-zis', function () {
     return view('overview-zis');
-});
+})->name('overview');
+Route::get('/penggalangan-dana', function () {
+    return view('penggalangan-dana');
+})->name('penggalangan-dana');
 
