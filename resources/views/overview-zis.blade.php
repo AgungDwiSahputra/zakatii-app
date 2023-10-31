@@ -16,22 +16,22 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">ZAKATII</a>
+            <a class="navbar-brand" href="{{ route('index') }}">ZAKATII</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('index') }}">HOME</a>
                     </li>
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         ZAKAT
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Zakat</a></li>
-                        <li><a class="dropdown-item" href="#">Infaq & Shodaqoh</a></li>
+                        <li><a class="dropdown-item" href="{{ route('zis-list') }}">Zakat</a></li>
+                        <li><a class="dropdown-item" href="{{ route('zis-list') }}">Infaq & Shodaqoh</a></li>
                     </ul>
                     </li>
                     <li class="nav-item">
@@ -66,7 +66,7 @@
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="#">Kantong Donasi</a></li>
                                 <li><a class="dropdown-item" href="#">Info Pribadi</a></li>
-                                <li><a class="dropdown-item" href="#">Galang Dana</a></li>
+                                <li><a class="dropdown-item" href="{{ route('penggalangan-dana') }}">Galang Dana</a></li>
                                 <li><a class="dropdown-item" href="#">Riwayat Transaksi</a></li>
                                 <li><a class="dropdown-item" href="#">Wishlist</a></li>
                                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket fa-lg ml-auto"></i></a></li>
@@ -80,7 +80,7 @@
     
     <!-- Section header -->
     <div class="container mt-4">
-      <div class="row align-items-center">
+      <div class="row align-items-center pb-3">
         <div class="col-4 col-lg-4 col-md-6 col-sm-6">
             <img src="{{ asset('assets/img/ngaji.png') }}" id="gambar-header" class="rounded">
         </div>
@@ -148,7 +148,7 @@
                     <h3>Rp 30.000.000</h3>
                 </div>
                 <div class="col-4 text-end align-middle">
-                    <button type="button" class="btn" style="background-color: #609966; color: #fff;"><b>Donate</b></button>
+                    <button type="button" class="btn" style="background-color: #609966; color: #fff;"><a href="{{ route('zis-list') }}"><b>Donate</b></a></button>
                 </div>
             </div>
         </div>

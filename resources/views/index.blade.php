@@ -20,7 +20,7 @@
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">ZAKATII</a>
+            <a class="navbar-brand" href="{{ route('index') }}">ZAKATII</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,15 +34,15 @@
                         <a class="dropdown-item text-end" href="#"><i class="fa-solid fa-right-from-bracket fa-lg ml-auto"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('index') }}">HOME</a>
                     </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="{{ route('zis-list') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         ZAKAT
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Zakat</a></li>
-                        <li><a class="dropdown-item" href="#">Infaq & Shodaqoh</a></li>
+                        <li><a class="dropdown-item" href="{{ route('zis-list') }}">Zakat</a></li>
+                        <li><a class="dropdown-item" href="{{ route('zis-list') }}">Infaq & Shodaqoh</a></li>
                     </ul>
                     </li>
                     <li class="nav-item">
@@ -94,7 +94,7 @@
             <div class="col-md-12 copy">
                 <h1>#PrayMarocco&Libya</h1>
                 <p>Ribuan tempat tinggal rusak, ribuan orang meninggal dan jutaan orang<br>luka-luka akibat bencana gempa bumi</p>
-                <a href="#"><button class="btn btn-zakatii-2">Beramal Sekarang</button></a>
+                <a href="{{ route('zis-list') }}"><button class="btn btn-zakatii-2">Beramal Sekarang</button></a>
             </div>
         </div>
     </div>
@@ -150,12 +150,12 @@
                 <h3 class="mb-4">Penggalangan Dana</h3>
             </div>
             <div class="penggalangan d-flex align-items-center justify-content-center flex-wrap flex-lg-nowrap">
-                <a href="#" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="#" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="#" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="#" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="#" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="#" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="{{ route('penggalangan-dana') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="{{ route('penggalangan-dana') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="{{ route('penggalangan-dana') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="{{ route('penggalangan-dana') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="{{ route('penggalangan-dana') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="{{ route('penggalangan-dana') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
             </div>
         </div>
     </section>
