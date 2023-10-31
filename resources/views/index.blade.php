@@ -150,42 +150,18 @@
                 <h3 class="mb-4">Penggalangan Dana</h3>
             </div>
             <div class="penggalangan d-flex align-items-center justify-content-center flex-wrap flex-lg-nowrap">
-                <a href="#" class="m-2 list-penggalangan bg-light">
-                    <div class="text-center">
-                        
-                    </div>
-                </a>
-                <a href="#" class="m-2 list-penggalangan bg-light">
-                    <div class="text-center">
-                        
-                    </div>
-                </a>
-                <a href="#" class="m-2 list-penggalangan bg-light">
-                    <div class="text-center">
-                        
-                    </div>
-                </a>
-                <a href="#" class="m-2 list-penggalangan bg-light">
-                    <div class="text-center">
-                        
-                    </div>
-                </a>
-                <a href="#" class="m-2 list-penggalangan bg-light">
-                    <div class="text-center">
-                        
-                    </div>
-                </a>
-                <a href="#" class="m-2 list-penggalangan bg-light">
-                    <div class="text-center">
-                        
-                    </div>
-                </a>
+                <a href="#" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="#" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="#" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="#" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="#" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="#" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
             </div>
         </div>
     </section>
 
     <section id="banner-slider">
-        <div class="flickity-effect w-100">
+        <div class="flickity-effect w-100 h-auto">
             <img src="{{ asset('assets/img/banner/banner.png') }}" alt="Banner" width="100%">
             <img src="{{ asset('assets/img/banner/banner.png') }}" alt="Banner" width="100%">
             <img src="{{ asset('assets/img/banner/banner.png') }}" alt="Banner" width="100%">
@@ -199,21 +175,9 @@
                 <h3 class="mb-4">Blogs</h3>
             </div>
             <div class="blogs d-flex align-items-center justify-content-center flex-wrap flex-lg-nowrap">
-                <a href="#" class="m-2 list-blogs bg-light">
-                    <div class="text-center">
-
-                    </div>
-                </a>
-                <a href="#" class="m-2 list-blogs bg-light">
-                    <div class="text-center">
-                        
-                    </div>
-                </a>
-                <a href="#" class="m-2 list-blogs bg-light">
-                    <div class="text-center">
-                        
-                    </div>
-                </a>
+                <a href="#" class="m-2 list-blogs bg-light" style="background-image: url('assets/img/blogs/blog.png');background-repeat:no-repeat;background-size:cover;"></a>
+                <a href="#" class="m-2 list-blogs bg-light" style="background-image: url('assets/img/blogs/blog.png');background-repeat:no-repeat;background-size:cover;"></a>
+                <a href="#" class="m-2 list-blogs bg-light" style="background-image: url('assets/img/blogs/blog.png');background-repeat:no-repeat;background-size:cover;"></a>
             </div>
         </div>
     </section>
