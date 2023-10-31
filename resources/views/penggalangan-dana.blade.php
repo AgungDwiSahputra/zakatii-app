@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     {{-- Local CSS --}}
-    <link rel="stylesheet" href="{{ asset('assets/css/index.css?v=1.0') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/penggalangan-dana.css?v=1.0') }}">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
@@ -89,98 +89,42 @@
         </div>
     </nav>
 
-    <div id="hero-section" class="container w-100 m-0">
+    <div class="container" id="progress-penggalangan">
         <div class="row">
-            <div class="col-md-12 copy">
-                <h1>#PrayMarocco&Libya</h1>
-                <p>Ribuan tempat tinggal rusak, ribuan orang meninggal dan jutaan orang<br>luka-luka akibat bencana gempa bumi</p>
-                <a href="#"><button class="btn btn-zakatii-2">Beramal Sekarang</button></a>
+            <h1 class="text-center">Galang Dana</h1>
+            <div class="progress-penggalangan position-relative mt-3">
+                <hr class="w-100 p-0 mt-4 mb-1" style="border:4px solid black;border-radius:8px;">
+                <div class=" w-100 number-progress position-absolute d-flex align-items-center justify-content-between">
+                    <div class="text-center d-flex align-items-center justify-content-center flex-column">
+                        <div class="list-number m-0 d-flex align-items-center justify-content-center active">1</div>
+                        <p>Tujuan</p>
+                    </div>
+                    <div class="text-center d-flex align-items-center justify-content-center flex-column">
+                        <div class="list-number m-0 d-flex align-items-center justify-content-center">2</div>
+                        <p>Data Diri</p>
+                    </div>
+                    <div class="text-center d-flex align-items-center justify-content-center flex-column">
+                        <div class="list-number m-0 d-flex align-items-center justify-content-center">3</div>
+                        <p>Penerima</p>
+                    </div>
+                </div>
             </div>
+            <form method="POST" action="#" class="input-progress mt-5">
+                <div class="list-input" id="page-tujuan">
+                    <div class="mb-3">
+                        <label for="pilih-tujuan" class="form-label">Pilih Tujuan</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Masjid A</option>
+                            <option value="1">Masjid B</option>
+                            <option value="2">Masjid C</option>
+                            <option value="3">Masjid D</option>
+                        </select>
+                        <button id="page-data-diri" class="btn btn-zakatii">Selanjutnya</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
-
-    <section id="menu-amalan">
-        <div class="container">
-            <div class="row">
-                <h3 class="mb-4">Menu Amalan</h3>
-            </div>
-            <div class="amalan d-flex align-items-center justify-content-center flex-wrap flex-lg-nowrap">
-                <a href="{{ route('zis-list') }}" class="m-2 list-amalan bg-light">
-                    <div class="text-center">
-                        <img src="{{ asset('assets/icons/Rice.png') }}" width="60px" alt="Rice">
-                        <p class="m-0">Zakat Fitrah</p>
-                    </div>
-                </a>
-                <a href="{{ route('zis-list') }}" class="m-2 list-amalan bg-light">
-                    <div class="text-center">
-                        <img src="{{ asset('assets/icons/Treasure.png') }}" width="60px" alt="Treasure">
-                        <p class="m-0">Zakat Maal</p>
-                    </div>
-                </a>
-                <a href="{{ route('zis-list') }}" class="m-2 list-amalan bg-light">
-                    <div class="text-center">
-                        <img src="{{ asset('assets/icons/Contractor.png') }}" width="60px" alt="Contractor">
-                        <p class="m-0">Zakat Peghasilan</p>
-                    </div>
-                </a>
-                <a href="{{ route('zis-list') }}" class="m-2 list-amalan bg-light">
-                    <div class="text-center">
-                        <img src="{{ asset('assets/icons/Mosque.png') }}" width="60px" alt="Mosque">
-                        <p class="m-0">Infaq</p>
-                    </div>
-                </a>
-                <a href="{{ route('zis-list') }}" class="m-2 list-amalan bg-light">
-                    <div class="text-center">
-                        <img src="{{ asset('assets/icons/Muslim.png') }}" width="60px" alt="Muslim">
-                        <p class="m-0">Sedekah</p>
-                    </div>
-                </a>
-                <a href="{{ route('zis-list') }}" class="m-2 list-amalan bg-light">
-                    <div class="text-center">
-                        <img src="{{ asset('assets/icons/More.png') }}" width="60px" alt="More">
-                        <p class="m-0">Lainnya</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section id="penggalangan-dana">
-        <div class="container">
-            <div class="row">
-                <h3 class="mb-4">Penggalangan Dana</h3>
-            </div>
-            <div class="penggalangan d-flex align-items-center justify-content-center flex-wrap flex-lg-nowrap">
-                <a href="#" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="#" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="#" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="#" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="#" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="#" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-            </div>
-        </div>
-    </section>
-
-    <section id="banner-slider">
-        <div class="flickity-effect w-100 h-auto">
-            <img src="{{ asset('assets/img/banner/banner.png') }}" alt="Banner" width="100%">
-            <img src="{{ asset('assets/img/banner/banner.png') }}" alt="Banner" width="100%">
-            <img src="{{ asset('assets/img/banner/banner.png') }}" alt="Banner" width="100%">
-            <img src="{{ asset('assets/img/banner/banner.png') }}" alt="Banner" width="100%">
-        </div>
-    </section>
-
-    <section id="blogs">
-        <div class="container">
-            <div class="row">
-                <h3 class="mb-4">Blogs</h3>
-            </div>
-            <div class="blogs d-flex align-items-center justify-content-center flex-wrap flex-lg-nowrap">
-                <a href="#" class="m-2 list-blogs bg-light" style="background-image: url('assets/img/blogs/blog.png');background-repeat:no-repeat;background-size:cover;"></a>
-                <a href="#" class="m-2 list-blogs bg-light" style="background-image: url('assets/img/blogs/blog.png');background-repeat:no-repeat;background-size:cover;"></a>
-                <a href="#" class="m-2 list-blogs bg-light" style="background-image: url('assets/img/blogs/blog.png');background-repeat:no-repeat;background-size:cover;"></a>
-            </div>
-        </div>
-    </section>
 
     <div class="container" id="three-pilar">
         <div class="row text-white justify-content-center">
@@ -237,40 +181,5 @@
 
     {{-- Jquery --}}
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
-    {{-- Flickity --}}
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
-    <script>
-        $(document).ready(function () { 
-            $('.flickity-effect').flickity({
-                contain: true,
-                cellAlign: 'left',
-                prevNextButtons: false,
-                pageDots: true
-            })
-            if (window.matchMedia("(max-width: 767.92px)").matches) {
-                $('.amalan').flickity({
-                    contain: true,
-                    cellAlign: 'left',
-                    prevNextButtons: true,
-                    pageDots: false
-                });
-                $('.penggalangan').flickity({
-                    contain: true,
-                    cellAlign: 'left',
-                    prevNextButtons: true,
-                    pageDots: false
-                });
-                $('.blogs').flickity({
-                    contain: true,
-                    cellAlign: 'left',
-                    prevNextButtons: true,
-                    pageDots: false
-                });
-            }
-        })
-
-    </script>
 </body>
 </html>
