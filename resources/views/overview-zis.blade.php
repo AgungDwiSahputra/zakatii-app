@@ -148,7 +148,7 @@
                     <h3>Rp 30.000.000</h3>
                 </div>
                 <div class="col-4 text-end align-middle">
-                    <button type="button" class="btn" style="background-color: #609966; color: #fff;"><a href="{{ route('zis-list') }}"><b>Donate</b></a></button>
+                    <button type="button" class="btn" style="background-color: #609966; color: #fff;"><a href="{{ route('zis-list') }}" style="color:#ffff; text-decoration:none;"><b>Donate</b></a></button>
                 </div>
             </div>
         </div>

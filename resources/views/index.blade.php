@@ -150,12 +150,12 @@
                 <h3 class="mb-4">Penggalangan Dana</h3>
             </div>
             <div class="penggalangan d-flex align-items-center justify-content-center flex-wrap flex-lg-nowrap">
-                <a href="{{ route('penggalangan-dana') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="{{ route('penggalangan-dana') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="{{ route('penggalangan-dana') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="{{ route('penggalangan-dana') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="{{ route('penggalangan-dana') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="{{ route('penggalangan-dana') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="{{ route('overview-zis') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="{{ route('overview-zis') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="{{ route('overview-zis') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="{{ route('overview-zis') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="{{ route('overview-zis') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="{{ route('overview-zis') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
             </div>
         </div>
     </section>
