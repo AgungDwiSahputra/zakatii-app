@@ -34,15 +34,15 @@
                         <a class="dropdown-item text-end" href="#"><i class="fa-solid fa-right-from-bracket fa-lg ml-auto"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('index') }}">HOME</a>
                     </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="{{ route('zis-list') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         ZAKAT
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Zakat</a></li>
-                        <li><a class="dropdown-item" href="#">Infaq & Shodaqoh</a></li>
+                        <li><a class="dropdown-item" href="{{ route('zis-list') }}">Zakat</a></li>
+                        <li><a class="dropdown-item" href="{{ route('zis-list') }}">Infaq & Shodaqoh</a></li>
                     </ul>
                     </li>
                     <li class="nav-item">
@@ -77,7 +77,7 @@
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="#">Kantong Donasi</a></li>
                                 <li><a class="dropdown-item" href="#">Info Pribadi</a></li>
-                                <li><a class="dropdown-item" href="#">Galang Dana</a></li>
+                                <li><a class="dropdown-item" href="{{ route('penggalangan-dana') }}">Galang Dana</a></li>
                                 <li><a class="dropdown-item" href="#">Riwayat Transaksi</a></li>
                                 <li><a class="dropdown-item" href="#">Wishlist</a></li>
                                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket fa-lg ml-auto"></i></a></li>
