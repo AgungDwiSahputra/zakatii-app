@@ -39,7 +39,7 @@
                         <a class="nav-link active" aria-current="page" href="{{ route('index') }}">HOME</a>
                     </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="{{ route('zis-list') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         ZAKAT
                     </a>
                     <ul class="dropdown-menu">
@@ -51,7 +51,7 @@
                         <a class="nav-link" aria-current="page" href="#">BLOG</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">CONTACT</a>
+                        <a class="nav-link" aria-current="page" href="{{ route('index') }}#contact">CONTACT</a>
                     </li>
                 </ul>
                 <div class="list-profile">
@@ -81,7 +81,7 @@
                                 <li><a class="dropdown-item" href="{{ route('penggalangan-dana') }}">Galang Dana</a></li>
                                 <li><a class="dropdown-item" href="#">Riwayat Transaksi</a></li>
                                 <li><a class="dropdown-item" href="#">Wishlist</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket fa-lg ml-auto"></i></a></li>
+                                <li><a class="dropdown-item" href="{{ route('index') }}"><i class="fa-solid fa-right-from-bracket fa-lg ml-auto"></i></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -111,7 +111,7 @@
             </div>
         </div>
     </div>
-    <footer class="container">
+    <footer class="container" id="contact">
         <div class="row">
             <div class="list-contact col-md-4">
                 <h5>Contact Us</h5>
