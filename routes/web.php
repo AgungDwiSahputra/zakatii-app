@@ -34,4 +34,7 @@ Route::get('/login-zis', function () {
 Route::get('/register-zis', function () {
     return view('register-zis');
 })->name('register-zis');
+Route::get('/kantong-donasi', function () {
+    return view('kantong-donasi');
+})->name('kantong-donasi');
 
