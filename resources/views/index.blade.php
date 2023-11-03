@@ -15,7 +15,7 @@
             <div class="col-md-12 copy">
                 <h1>#SatuKlikUntukKebaikanAbadi</h1>
                 <p>Platform zakat dan infaq berbasis Islam dengan kalkulator, pembayaran online, edukasi, dan transparansi, meningkatkan kesadaran agama dan membantu yang membutuhkan.</p>
-                <a href="{{ route('zis-list') }}"><button class="btn btn-zakatii-2">Beramal Sekarang</button></a>
+                <a href="#menu-amalan"><button class="btn btn-zakatii-2">Beramal Sekarang</button></a>
             </div>
         </div>
     </div>
@@ -44,24 +44,24 @@
                         <p class="m-0">Zakat Peghasilan</p>
                     </div>
                 </a>
-                <a href="{{ route('zis-list') }}" class="m-2 list-amalan bg-light">
+                <a href="{{ route('infaq-sedekah-list') }}" class="m-2 list-amalan bg-light">
                     <div class="text-center">
                         <img src="{{ asset('assets/icons/Mosque.png') }}" width="60px" alt="Mosque">
                         <p class="m-0">Infaq</p>
                     </div>
                 </a>
-                <a href="{{ route('zis-list') }}" class="m-2 list-amalan bg-light">
+                <a href="{{ route('infaq-sedekah-list') }}" class="m-2 list-amalan bg-light">
                     <div class="text-center">
                         <img src="{{ asset('assets/icons/Muslim.png') }}" width="60px" alt="Muslim">
                         <p class="m-0">Sedekah</p>
                     </div>
                 </a>
-                <a href="{{ route('zis-list') }}" class="m-2 list-amalan bg-light">
+                {{-- <a href="{{ route('zis-list') }}" class="m-2 list-amalan bg-light">
                     <div class="text-center">
                         <img src="{{ asset('assets/icons/More.png') }}" width="60px" alt="More">
                         <p class="m-0">Lainnya</p>
                     </div>
-                </a>
+                </a> --}}
             </div>
         </div>
     </section>
@@ -117,8 +117,8 @@
                 $('.amalan').flickity({
                     contain: true,
                     cellAlign: 'left',
-                    prevNextButtons: true,
-                    pageDots: false
+                    prevNextButtons: false,
+                    pageDots: true
                 });
                 $('.penggalangan').flickity({
                     contain: true,
