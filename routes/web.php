@@ -19,6 +19,9 @@ Route::get('/', function () {
 Route::get('/zis-list', function () {
     return view('zis-list');
 })->name('zis-list');
+Route::get('/infaq-sedekah-list', function () {
+    return view('infaq-sedekah-list');
+})->name('infaq-sedekah-list');
 Route::get('/overview-zis', function () {
     return view('overview-zis');
 })->name('overview');
