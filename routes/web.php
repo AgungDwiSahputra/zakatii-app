@@ -28,4 +28,10 @@ Route::get('/overview-zis', function () {
 Route::get('/penggalangan-dana', function () {
     return view('penggalangan-dana');
 })->name('penggalangan-dana');
+Route::get('/login-zis', function () {
+    return view('login-zis');
+})->name('login-zis');
+Route::get('/register-zis', function () {
+    return view('register-zis');
+})->name('register-zis');
 
