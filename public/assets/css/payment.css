@@ -1,0 +1,154 @@
+/* Progress Penggalangan Dana */
+    #progress-penggalangan{
+        padding: 80px 0;
+    }
+    #progress-penggalangan .number-progress{
+        left: 0;
+        top: 0;
+    }
+    #progress-penggalangan .number-progress .list-number{
+        width: 50px;
+        height: 50px;
+        background-color: #EDF1D6;
+        border-radius: 50%;
+        border: 2px solid black;
+        margin: 0 20px;
+        
+        /* font */
+        font-weight: 700;
+    }
+    #progress-penggalangan .number-progress{
+        justify-content: space-between;
+    }
+    @media (max-width:767.92px){
+        #progress-penggalangan .number-progress{
+            justify-content: space-evenly;
+        }
+    }
+    #progress-penggalangan .number-progress .list-number.active{
+        background-color: #609966;
+        color: white;
+    }
+    #progress-penggalangan .input-progress{
+        padding: 50px;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+    #progress-penggalangan .list-input.active{
+        display: block;
+    }
+    #progress-penggalangan .list-input.fade{
+        display: none;
+    }
+
+    /* Nominal */
+        #page-nominal .kotak-nominal{
+            width: 334px;
+            height: 113px;
+            border-radius: 10px;
+            background: #FFF;
+            box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+        }
+        @media (min-width:768px) and (max-width:991.92px){
+            #page-nominal .kotak-nominal{
+                width: 300px;
+                margin: 0;
+            }
+        }
+        #page-nominal .kotak-nominal:hover{
+            background-color: #EDF1D6;
+        }
+        #page-nominal .kotak-nominal:checked{
+            background-color: #EDF1D6;
+            border: none;
+        }
+        #page-nominal .form-check-label{
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #page-nominal #nominal-select .nominal{
+            min-width: 200px;
+        }
+    /* End Nominal */
+
+    /* Data DIri */
+        #page-data-diri .rincian{
+            padding: 40px;
+            border-radius: 10px;
+            background: #609966;
+            box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+        }
+        #page-payment .rincian{
+            padding: 40px;
+            border-radius: 10px;
+            background: #609966;
+            box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+        }
+    /* End Data DIri */
+
+    /* Payment */
+        #page-payment .kotak-nominal{
+            width: 360px;
+            height: 91.697px;
+            border-radius: 10px;
+            background: #FFF;
+            box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+        }
+        #page-payment .kotak-nominal:hover{
+            background-color: #EDF1D6;
+        }
+        #page-payment .kotak-nominal:checked{
+            background-color: #EDF1D6;
+            border: none;
+        }
+        #page-payment .form-check-label{
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #page-payment #nominal-select .nominal{
+            min-width: 200px;
+        }
+    /* End Payment */
+
+    /* Success */
+        .bukti-upload {
+            color: transparent;
+        }
+        .bukti-upload::-webkit-file-upload-button {
+            visibility: hidden;
+        }
+        .bukti-upload::before {
+            content: 'Masukan bukti transfer';
+            color: black;
+            display: inline-block;
+            border: 1px solid #999;
+            border-radius: 3px;
+            padding: 5px 8px;
+            outline: none;
+            white-space: nowrap;
+            -webkit-user-select: none;
+            cursor: pointer;
+            text-shadow: 1px 1px #fff;
+            font-weight: 700;
+            font-size: 10pt;
+            text-align: center;
+            display: block;
+            height: 250px;
+            line-height: 250px;
+        }
+        .bukti-upload:hover::before {
+            border-color: black;
+        }
+        .bukti-upload:active {
+            outline: 0;
+        }
+        .bukti-upload:active::before {
+            background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+        }
+    /* End Success */
+/* END Progress Penggalangan Dana */

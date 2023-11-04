@@ -113,7 +113,7 @@
                 prevNextButtons: false,
                 pageDots: true
             })
-            if (window.matchMedia("(max-width: 767.92px)").matches) {
+            if (window.matchMedia("(max-width: 919.92px)").matches) {
                 $('.amalan').flickity({
                     contain: true,
                     cellAlign: 'left',

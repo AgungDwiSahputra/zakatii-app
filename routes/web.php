@@ -28,4 +28,15 @@ Route::get('/overview-zis', function () {
 Route::get('/penggalangan-dana', function () {
     return view('penggalangan-dana');
 })->name('penggalangan-dana');
+Route::get('/payment', function () {
+    return view('payment');
+})->name('payment');
+
+
+// Payment
+// Route::name('payment.')->group(function () {
+//     Route::get('/dashboard' function(){
+//         return view('')
+//     })
+// })
 
