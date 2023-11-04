@@ -28,11 +28,11 @@
                 </div>
                 <div class="input-group mb-3">
                   <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock fa-lg" style="color: #000000;"></i></span>
-                  <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                  <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
                 </div>
                 <a href="#" class="fs-6 text-decoration-underline link-dark">Forgot your password</a>
                 <div class="signin mt-2">
-                  <a href="#"><button class="btn btn-success text-light rounded-pill ps-4 pe-4" id="signin">Sign In</button></a>
+                  <a href="{{route('login-zis')}}"><button class="btn btn-success text-light rounded-pill ps-4 pe-4" id="signin">Sign In</button></a>
                 </div>
             </div>
             <div class="col-lg-5 col-12 p-5 text-center d-flex" id="signup_page">
@@ -40,7 +40,7 @@
                 <p class="fs-1 fw-bold text-light">Hello, Friend!</p>
                 <p class="fs-6 text-light">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
                 <div class="signup">
-                  <a href="#"><button class="btn btn-outline-light rounded-pill ps-4 pe-4" id="signup">Sign Up</button></a>
+                  <a href="{{route ('register-zis')}}"><button class="btn btn-outline-light rounded-pill ps-4 pe-4" id="signup">Sign Up</button></a>
                 </div>
               </div>
             </div>
