@@ -1,0 +1,51 @@
+body{
+    background-color: #EDF1D6;
+}
+#register{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#signup_page{
+    background-color: white;
+    height: auto;
+    min-height: 450px;
+}
+#signup{
+    background-color: #609966;
+}
+#signin_page{
+    background-color: #609966;
+    height: auto;
+    min-height: 450px;
+}
+
+@media (max-width: 767.92px){
+    #judul{
+        padding-top: 100px;
+    }
+    #signup_page{
+        background-color: white;
+        height: auto;
+        min-height: 400px;
+        order: 1;
+    } 
+    #signin_page{
+        background-color: #609966;
+        height: auto;
+        min-height: 100px;
+        order: 2;
+    }
+}
+
+@media (max-width: 768px){
+    
+}
+
+@media (max-width: 576px){
+    
+}
+@media (max-width: 360px){
+    
+}
