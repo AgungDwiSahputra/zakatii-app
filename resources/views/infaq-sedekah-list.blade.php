@@ -67,9 +67,9 @@
                         <div class="list-item row justify-content-center">
                             @for ($i = 0; $i < 12;$i++)
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 card-zis d-flex align-items-center justify-content-start">
-                                    <img src="{{ asset('assets/img/hero-image.jpg') }}" alt="Cover ZIS" class="img-zis img-thumbnail rounded">
+                                    <a href="{{ route('overview') }}" class="nav-link"><img src="{{ asset('assets/img/hero-image.jpg') }}" alt="Cover ZIS" class="img-zis img-thumbnail rounded"></a>
                                     <div class="deskripsi ms-3">
-                                        <h5 class="m-0">Sucikan Hati dengan Zakat Mal</h5>
+                                        <a href="{{ route('overview') }}" class="nav-link"><h5 class="m-0">Infaq</h5></a>
                                         <span>Baznas</span>
                                         <div class="progress my-2" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                             <div class="progress-bar" style="width: 25%"></div>
@@ -106,9 +106,9 @@
                         <div class="list-item row justify-content-center">
                             @for ($i = 0; $i < 12;$i++)
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 card-zis d-flex align-items-center justify-content-start">
-                                    <img src="{{ asset('assets/img/hero-image.jpg') }}" alt="Cover ZIS" class="img-zis img-thumbnail rounded">
+                                    <a href="{{ route('overview') }}" class="nav-link"><img src="{{ asset('assets/img/hero-image.jpg') }}" alt="Cover ZIS" class="img-zis img-thumbnail rounded"></a>
                                     <div class="deskripsi ms-3">
-                                        <h5 class="m-0">Sucikan Hati dengan Zakat Mal</h5>
+                                        <a href="{{ route('overview') }}" class="nav-link"><h5 class="m-0">Sedekah</h5></a>
                                         <span>Baznas</span>
                                         <div class="progress my-2" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                             <div class="progress-bar" style="width: 25%"></div>
