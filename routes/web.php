@@ -22,9 +22,15 @@ Route::get('/zis-list', function () {
 Route::get('/infaq-sedekah-list', function () {
     return view('infaq-sedekah-list');
 })->name('infaq-sedekah-list');
-Route::get('/overview-zis', function () {
-    return view('overview-zis');
-})->name('overview');
+Route::get('/overview-maal', function () {
+    return view('overview-maal');
+})->name('overview-maal');
+Route::get('/overview-fitrah', function () {
+    return view('overview-fitrah');
+})->name('overview-fitrah');
+Route::get('/overview-sedekah', function () {
+    return view('overview-sedekah');
+})->name('overview-sedekah');
 Route::get('/penggalangan-dana', function () {
     return view('penggalangan-dana');
 })->name('penggalangan-dana');
@@ -37,7 +43,20 @@ Route::get('/register-zis', function () {
 Route::get('/kantong-donasi', function () {
     return view('kantong-donasi');
 })->name('kantong-donasi');
-Route::get('/payment', function () {
-    return view('payment');
-})->name('payment');
+Route::get('/payment-maal', function () {
+    return view('payment-maal');
+})->name('payment-maal');
+Route::get('/payment-fitrah', function () {
+    return view('payment-fitrah');
+})->name('payment-fitrah');
+Route::get('/payment-sedekah', function () {
+    return view('payment-sedekah');
+})->name('payment-sedekah');
+
+
+Route::name('admin.')->group(function () {
+    Route::get('dashboard', function () {
+        return view('admin.admin-frame');
+    })->name('dashboard');
+});
 

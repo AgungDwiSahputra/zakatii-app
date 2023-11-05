@@ -38,12 +38,12 @@
                         <p class="m-0">Zakat Maal</p>
                     </div>
                 </a>
-                <a href="{{ route('zis-list') }}" class="m-2 list-amalan bg-light">
+                {{-- <a href="{{ route('zis-list') }}" class="m-2 list-amalan bg-light">
                     <div class="text-center">
                         <img src="{{ asset('assets/icons/Contractor.png') }}" width="60px" alt="Contractor">
                         <p class="m-0">Zakat Peghasilan</p>
                     </div>
-                </a>
+                </a> --}}
                 <a href="{{ route('infaq-sedekah-list') }}" class="m-2 list-amalan bg-light">
                     <div class="text-center">
                         <img src="{{ asset('assets/icons/Mosque.png') }}" width="60px" alt="Mosque">
@@ -71,12 +71,12 @@
                 <h3 class="mb-4">Penggalangan Dana</h3>
             </div>
             <div class="penggalangan d-flex align-items-center justify-content-center flex-wrap flex-lg-nowrap">
-                <a href="{{ route('overview') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="{{ route('overview') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="{{ route('overview') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="{{ route('overview') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="{{ route('overview') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
-                <a href="{{ route('overview') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="{{ route('overview-fitrah') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="{{ route('overview-maal') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="{{ route('overview-fitrah') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="{{ route('overview-fitrah') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="{{ route('overview-fitrah') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
+                <a href="{{ route('overview-fitrah') }}" class="m-2 list-penggalangan bg-light" style="background-image: url('assets/img/galangan-dana/galangan-dana (1).png')"></a>
             </div>
         </div>
     </section>

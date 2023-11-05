@@ -13,8 +13,8 @@
 
     <div class="container" id="progress-penggalangan">
         <div class="row">
-            <a href="{{ route('index') }}" class="text-black nav-link fw-bold ms-4 ms-lg-0"><i class="fa-solid fa-arrow-left fa-xl text-black"></i> Kembali</a>
-            <h1 class="text-center">Pembayaran</h1>
+            <a href="{{ route('overview-maal') }}" class="text-black nav-link fw-bold ms-4 ms-lg-0"><i class="fa-solid fa-arrow-left fa-xl text-black"></i> Kembali</a>
+            <h1 class="text-center">Pembayaran Zakat Maal</h1>
             <div class="progress-penggalangan position-relative mt-3 mb-4">
                 <hr class="w-100 p-0 mt-4 mb-1" style="border:4px solid black;border-radius:8px;">
                 <div class=" w-100 number-progress position-absolute d-flex align-items-center">
@@ -38,6 +38,10 @@
             </div>
             <form method="POST" action="#" class="input-progress mt-5">
                 <div class="list-input active" id="page-nominal" data-page="1">
+                    <h6 class="fw-bold text-center">Niat Zakat Maal</h6>
+                    <p class="text-center m-0 p-0">Nawaitu an ukhrija zakatadz maali fardhan lillahi ta`ala.</p>
+                    <p class="text-center">“Saya Niat Mengeluarkan Zakat Maal Dari Diriku Sendiri Fardhu Karena Allah Ta`ala”</p>
+                    <a href="#" class="text-center nav-link mb-5 fw-bold">Lihat Detail</a>
                     <div class="mb-3 d-flex align-items-center justify-content-lg-between justify-content-center flex-wrap">
                         @php
                             $nominal = 15000;
@@ -64,7 +68,7 @@
                         <div class="w-100 action d-flex align-items-center justify-content-between">
                             <div id="nominal-select">
                                 <label for="nominal">Nominal</label><br>
-                                <h3 class="nominal fw-bold">Rp. 0</h3>
+                                <h3 class="nominal fw-bold">Rp. <input type="text" name="nominal" class="nominal fw-bold" value="0" id="numericNominal"></h3>
                             </div>
                             <button id="page-data-diri" type="button" class="btn btn-zakatii mt-3 float-right">Selanjutnya</button>
                         </div>
@@ -136,6 +140,7 @@
                             <div class="m-0">
                                 <input class="bukti-upload" type="file" id="formFile">
                             </div>
+                            <span class="text-danger">* Bukti dalam bentuk .jpg/.png</span>
                         </div>
                         <div class="desc-pembayaran ms-3 text-center order-lg-2 order-1">
                             <h3 class="fw-bold">Selesaikan pembayaran dalam</h3>
@@ -171,8 +176,31 @@
 
 @push('js')
     <script>
+        // Mendeteksi perubahan pada input number
+        $('#numericNominal').on('input', function() {
+            // Ambil nilai dari input
+            var inputValue = $(this).val();
+
+            // Hapus semua karakter non-digit (misalnya, tanda koma atau titik)
+            var numericValue = inputValue.replace(/[^0-9]/g, '');
+
+            // Ubah menjadi format mata uang dengan tanda pemisah ribuan
+            var formattedValue = numericValue.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+
+            // Setel kembali nilai input dengan format mata uang
+            $(this).val(formattedValue);
+        });
+
         $('#progress-penggalangan .list-input button').on("click", function(){
+            
             const target = $(this).attr('id');
+
+            if(target == 'page-data-diri'){
+                var angka = 'Rp. '+$('#numericNominal').val();
+                // console.log(angka);
+                // Simpan data ke session storage
+                sessionStorage.setItem('nominal', angka);
+            }
             var nominalSession = sessionStorage.getItem('nominal')
             $('.nominal-payment').html(nominalSession) // Merubah nominal payment pada tabs di payemnt
 
@@ -213,12 +241,16 @@
         // Nominal
         $('#page-nominal .form-check').on("click", function(){
             var nominal = $(this).find('.copy-nominal').html()
-            // var numericValue = nominal.replace(/\D/g, '');
+            // Menghapus "Rp." dan spasi dari string
+            var numericValue = nominal.replace(/\D/g, '');
+            // var cleanedText = inputText.replace("Rp. ", "");
 
-            $('#nominal-select .nominal').html(nominal)
+            // Mengubah string yang telah dibersihkan menjadi angka
+            var angka = parseFloat(numericValue);
 
-            // Simpan data ke session storage
-            sessionStorage.setItem('nominal', nominal);
+            // $('#nominal-select .nominal').html(nominal)
+            $('#numericNominal').val(angka)
+
             // sessionStorage.removeItem('nominal');
         })
     </script>
