@@ -26,7 +26,7 @@
         text-align: center;
     }
     .kotak-pilihan-zakat .nav-link.active{
-        height: 125%;
+        height: 130%;
         background-color: #EDF1D6;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
@@ -44,9 +44,9 @@
             font-size: 22px;
             margin-top: 10px;
         }
-        .kotak-pilihan-zakat .nav-link.active{
+        /* .kotak-pilihan-zakat .nav-link.active{
             height: 125%;
-        }
+        } */
         .kotak-pilihan-zakat .nav-link img{
             width: 35px;
         }

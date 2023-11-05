@@ -19,7 +19,7 @@
         <div class="col-lg-8 col-md-6 col-sm-12 ps-4">
             <div class="row pb-3 me-2 border-1 border-bottom border-black">
                 <div class="col-11 p-0">
-                    <p class="fs-1 fw-bold mb-0 align-self-center">Sucikan Hati dengan Zakat Mal</p>
+                    <p class="fs-1 fw-bold mb-0 align-self-center">Sucikan Hati dengan Zakat Maal</p>
                 </div>
                 <div class="col-1 text-center align-self-center">
                     <!-- icon -->
@@ -78,7 +78,7 @@
                     <h3>Rp 30.000.000</h3>
                 </div>
                 <div class="col-4 text-end align-middle">
-                    <a href="{{route('payment')}}">
+                    <a href="{{route('payment-maal')}}">
                         <button type="button" class="btn" style="background-color: #609966; color: #fff;"><b>Donate</b></button>
                     </a>
                 </div>

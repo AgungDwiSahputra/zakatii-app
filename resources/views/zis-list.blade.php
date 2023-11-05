@@ -67,9 +67,8 @@
                                         <div class="mb-3">
                                             <label for="besaran_zakat" class="form-label">Besaran Zakat<span class="text-danger">*</span></label>
                                             <div class="input-group mb-0">
-                                                <span class="input-group-text" id="besaran_zakat"><i class="fa-solid fa-bag-shopping"></i></span>
-                                                <input id="numericInput2" name="besaran_zakat" type="number" class="form-control" value="0" aria-label="nilai" aria-describedby="besaran_zakat">
-                                                <span class="input-group-text" id="besaran_zakat">Kg</span>
+                                                <input id="numericInput2" step="0.01" name="besaran_zakat" type="number" class="form-control" value="0" aria-label="nilai" aria-describedby="besaran_zakat">
+                                                <span class="input-group-text" id="besaran_zakat">Kg/Jiwa</span>
                                             </div>
                                             <div id="numericInput2" class="form-text">
                                                 * Harga rata-rata beras = Rp. 13.372
@@ -80,6 +79,7 @@
                                     <div class="total d-flex flex-column align-items-center justify-content-center w-sm-100 w-50 ms-5">
                                         <span>Hasil Perhitungan</span>
                                         <h3 id="hasil-perhitungan-fitrah">-</h3>
+                                        <span id="keterangan-fitrah" class="fw-bold" style="font-size: 11px !important;padding: 0 12px;"></span>
                                     </div>
                                 </div>
                             </div>
@@ -108,9 +108,9 @@
                         <div class="list-item row justify-content-center">
                             @for ($i = 0; $i < 12;$i++)
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 card-zis d-flex align-items-center justify-content-start">
-                                    <a href="{{ route('overview') }}" class="nav-link"><img src="{{ asset('assets/img/hero-image.jpg') }}" alt="Cover ZIS" class="img-zis img-thumbnail rounded"></a>
+                                    <a href="{{ route('overview-fitrah') }}" class="nav-link"><img src="{{ asset('assets/img/hero-image.jpg') }}" alt="Cover ZIS" class="img-zis img-thumbnail rounded"></a>
                                     <div class="deskripsi ms-3">
-                                        <a href="{{ route('overview') }}" class="nav-link"><h5 class="m-0">Sucikan Hati dengan Zakat Fitrah</h5></a>
+                                        <a href="{{ route('overview-fitrah') }}" class="nav-link"><h5 class="m-0">Sucikan Hati dengan Zakat Fitrah</h5></a>
                                         <span>Baznas</span>
                                         <div class="progress my-2" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                             <div class="progress-bar" style="width: 25%"></div>
@@ -280,9 +280,9 @@
                         <div class="list-item row justify-content-center">
                             @for ($i = 0; $i < 12;$i++)
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 card-zis d-flex align-items-center justify-content-start">
-                                    <a href="{{ route('overview') }}" class="nav-link"><img src="{{ asset('assets/img/hero-image.jpg') }}" alt="Cover ZIS" class="img-zis img-thumbnail rounded"></a>
+                                    <a href="{{ route('overview-maal') }}" class="nav-link"><img src="{{ asset('assets/img/hero-image.jpg') }}" alt="Cover ZIS" class="img-zis img-thumbnail rounded"></a>
                                     <div class="deskripsi ms-3">
-                                        <a href="{{ route('overview') }}" class="nav-link"><h5 class="m-0">Sucikan Hati dengan Zakat Maal</h5></a>
+                                        <a href="{{ route('overview-maal') }}" class="nav-link"><h5 class="m-0">Sucikan Hati dengan Zakat Maal</h5></a>
                                         <span>Baznas</span>
                                         <div class="progress my-2" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                             <div class="progress-bar" style="width: 25%"></div>
@@ -353,10 +353,22 @@
 
     // Perhitungan Zakat Fitrah
     $('#hitung-zakat-fitrah').on("click", function(){
-        var nilaiAsset = $('input[name="jumlah-jiwa"]').val().replace(/\D/g, '');
-        var nilaiProperti = $('input[name="besaran_zakat"]').val().replace(/\D/g, '');
+        var jumlahJiwa = $('input[name="jumlah-jiwa"]').val().replace(/\D/g, '');
+        var besaranZakat = $('input[name="besaran_zakat"]').val().replace(/\D/g, '');
 
-        var hasilJumlah = nilaiAsset * nilaiProperti
+        if(besaranZakat < 2.8){
+            $('#keterangan-fitrah').html('*Anda belum memenuhi nishob yang beratnya setara dengan 2.5kg')
+            $('#keterangan-fitrah').css({
+                'color': 'red'
+            })
+        }else{
+            $('#keterangan-fitrah').html('*Anda Berhak Menyalurkan Ke Lembaga Amil Zakat Resmi atau Program Zakat Lainnya')
+            $('#keterangan-fitrah').css({
+                'color': 'white'
+            })
+        }
+
+        var hasilJumlah = jumlahJiwa * besaranZakat
         var KonversiRupiah = hasilJumlah * 13372
         // Mengatur opsi format angka
         var formatOptions = { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }

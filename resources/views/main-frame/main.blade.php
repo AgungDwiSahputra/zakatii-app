@@ -60,10 +60,27 @@
                             <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-bell fa-lg"></i>
                             </a>
-                            <ul class="dropdown-menu">
+                            {{-- <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Pembaharuan Sistem</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="#">Update Penggalangan Data</a></li>
+                            </ul> --}}
+                            <ul class="dropdown-menu p-0" style="width: 25vw;left:-20vw">
+                                <li class="d-flex align-items-center justify-content-between px-4 pt-4 pb-2">
+                                    <h5>Pengaturan</h5>
+                                    <a href="#" class="nav-link" style="font-size: 12px;">Lihat Semua</a>
+                                </li>
+                                <li><hr class="dropdown-divider m-0 p-0"></li>
+                                <li class="d-flex align-items-start justify-content-between px-4 py-3 list-notifikasi">
+                                    <div class="copy">
+                                        <p class="mb-0 pb-0">Transfer Dana ke Masjid </p>
+                                        <p>Infaq dan Shodaqoh</p>
+                                        <p class="mb-0 pb-0 fw-bold">Rp. 30.000.000</p>
+                                    </div>
+                                    <div class="tanggal-notif">
+                                        <p class="mb-0 pb-0">20/11/2023</p>
+                                    </div>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
