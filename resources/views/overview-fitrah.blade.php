@@ -59,11 +59,11 @@
             </div>
             <div class="row pt-3 pb-3 me-2 justify-content-between">
                 <div class="col-4 col-lg-4 col-md-5 col-sm-6">
-                    <p class="m-0">Total Donasi</p>
+                    <p class="m-0">Total Dana Terkumpul</p>
                     <p class="m-0"><b>Rp 15.000.000</b></p>
                 </div>
                 <div class="col-4 col-lg-4 col-md-5 col-sm-6 text-end">
-                    <p class="m-0">Sisa Donasi</p>
+                    <p class="m-0">Sisa Dana Terkumpul</p>
                     <p class="m-0"><b>Rp 15.000.000</b></p>
                 </div>
             </div>
@@ -74,7 +74,7 @@
             </div>
             <div class="row pt-3 pb-3 me-2 justify-content-between align-items-center">
                 <div class="col-6">
-                    <p class="m-0">Target Donasi</p>
+                    <p class="m-0">Target Dana Terkumpul</p>
                     <h3>Rp 30.000.000</h3>
                 </div>
                 <div class="col-4 text-end align-middle">

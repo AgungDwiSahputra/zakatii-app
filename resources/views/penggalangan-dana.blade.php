@@ -47,12 +47,12 @@
             <form method="POST" action="#" class="input-progress mt-5">
                 <div class="list-input active" id="page-tujuan" data-page="1">
                     <div class="mb-3">
-                        <label for="pilih-tujuan" class="form-label">Pilih Tujuan</label>
+                        <label for="pilih-tujuan" class="form-label">Pilih Tujuan / Kategori</label>
                         <select class="form-select" aria-label="Default select example">
-                            <option selected>Masjid A</option>
-                            <option value="1">Masjid B</option>
-                            <option value="2">Masjid C</option>
-                            <option value="3">Masjid D</option>
+                            <option selected>Zakat Maal</option>
+                            <option value="1">Zakat Maal</option>
+                            <option value="2">Zakat Infaq</option>
+                            <option value="3">Infaq / Sedekah</option>
                         </select>
                         <div class="action d-flex align-items-center justify-content-between">
                             <button id="page-data-diri" type="button" class="btn btn-zakatii mt-3 float-right">Selanjutnya</button>
@@ -95,8 +95,8 @@
                         <input name="perkiraan_biaya" type="text" class="form-control" id="perkiraan_biaya" placeholder="Perkiraan Biaya">
                         <label for="durasi" class="form-label">Durasi Galang Dana</label>
                         <input name="durasi" type="text" class="form-control" id="durasi" placeholder="Durasi Galang Dana">
-                        <label for="rincian_penggunaan" class="form-label">Perkiraan Biaya yang Dibutuhkan</label>
-                        <input name="rincian_penggunaan" type="text" class="form-control" id="rincian_penggunaan" placeholder="Perkiraan Biaya yang Dibutuhkan">
+                        <label for="rincian_penggunaan" class="form-label">Rincian Penggunaan Dana</label>
+                        <input name="rincian_penggunaan" type="text" class="form-control" id="rincian_penggunaan" placeholder="Rincian Penggunaan Dana">
                         <div class="action d-flex align-items-center justify-content-between">
                             <button id="page-penerima" type="button" class="btn btn-zakatii-2 mt-3 float-left">Sebelumnya</button>
                             <button id="page-judul" type="button" class="btn btn-zakatii mt-3 float-right">Selanjutnya</button>
@@ -129,7 +129,7 @@
                         </div>
                         <div class="action d-flex align-items-center justify-content-between">
                             <button id="page-judul" type="button" class="btn btn-zakatii-2 mt-3 float-left">Sebelumnya</button>
-                            <a href="{{ route('index') }}"><button id="page-deskripsi" type="submit" class="btn btn-zakatii mt-3 float-right">Kirim</button></a>
+                            <a href="{{ route('index') }}"><button id="page-deskripsi" type="button" class="btn btn-zakatii mt-3 float-right">Kirim</button></a>
                         </div>
                     </div>
                 </div>

@@ -91,7 +91,7 @@
                             </div>
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="pekerjaan"><i class="fa-solid fa-briefcase"></i></span>
-                                <input type="text" class="form-control" placeholder="Pekerjaan" aria-label="Pekerjaan" aria-describedby="pekerjaan" value="Laki-Laki" readonly>
+                                <input type="text" class="form-control" placeholder="Pekerjaan" aria-label="Pekerjaan" aria-describedby="pekerjaan" value="Karyawan Swasta" readonly>
                             </div>
                         </div>
                         <div class="rincian text-light text-center ms-lg-4 w-lg-0 w-100">
@@ -243,6 +243,8 @@
 
             // Mengubah string yang telah dibersihkan menjadi angka
             var angka = parseFloat(numericValue);
+            // Mengubah angka menjadi format mata uang dengan titik sebagai pengganti koma
+            var formatMataUang = angka.toLocaleString('id-ID');
 
             // $('#nominal-select .nominal').html(nominal)
             $('#numericNominal').val(angka)

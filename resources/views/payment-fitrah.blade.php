@@ -44,7 +44,7 @@
                     <a href="#" class="text-center nav-link mb-5 fw-bold">Lihat Detail</a>
                     <div class="mb-3 d-flex align-items-center justify-content-lg-between justify-content-center flex-wrap">
                         @php
-                            $nominal = 15000;
+                            $nominal = 45000;
                         @endphp
                         @for($i = 1; $i <= 9; $i++)
                             <div class="form-check d-inline-block position-relative mb-3">
@@ -68,7 +68,7 @@
                         <div class="w-100 action d-flex align-items-center justify-content-between">
                             <div id="nominal-select">
                                 <label for="nominal">Nominal</label><br>
-                                <h3 class="nominal fw-bold">Rp. <input type="text" name="nominal" class="nominal fw-bold" value="0" id="numericNominal"></h3>
+                                <h3 class="nominal fw-bold">Rp. <input type="text" name="nominal" class="nominal fw-bold" value="45.000" id="numericNominal"></h3>
                             </div>
                             <button id="page-data-diri" type="button" class="btn btn-zakatii mt-3 float-right">Selanjutnya</button>
                         </div>
@@ -95,7 +95,7 @@
                             </div>
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="pekerjaan"><i class="fa-solid fa-briefcase"></i></span>
-                                <input type="text" class="form-control" placeholder="Pekerjaan" aria-label="Pekerjaan" aria-describedby="pekerjaan" value="Laki-Laki" readonly>
+                                <input type="text" class="form-control" placeholder="Pekerjaan" aria-label="Pekerjaan" aria-describedby="pekerjaan" value="Karyawan Swasta" readonly>
                             </div>
                         </div>
                         <div class="rincian text-light text-center ms-lg-4 w-lg-0 w-100">
@@ -112,7 +112,7 @@
                     <div class="d-flex align-items-center justify-content-center flex-column flex-lg-row">
                         <div class="data-diri">
                             <div class="mb-3 d-flex align-items-center justify-content-around flex-wrap">
-                                @for($i = 1; $i <= 5; $i++)
+                                @for($i = 1; $i <= 4; $i++)
                                     <div class="form-check d-inline-block position-relative mb-3">
                                         <input class="form-check-input kotak-nominal" type="radio" name="number-payment" id="number-payment-{{ $i }}">
                                         <label class="form-check-label position-absolute d-flex align-items-center justify-content-around" for="number-payment-{{ $i }}">
@@ -247,6 +247,8 @@
 
             // Mengubah string yang telah dibersihkan menjadi angka
             var angka = parseFloat(numericValue);
+            // Mengubah angka menjadi format mata uang dengan titik sebagai pengganti koma
+            var formatMataUang = angka.toLocaleString('id-ID');
 
             // $('#nominal-select .nominal').html(nominal)
             $('#numericNominal').val(angka)
