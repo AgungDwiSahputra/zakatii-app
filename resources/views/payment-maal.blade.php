@@ -79,23 +79,23 @@
                         <div class="data-diri w-100">
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="nama_lengkap"><i class="fa-solid fa-user"></i></span>
-                                <input type="text" class="form-control" placeholder="Nama Lengkap" aria-label="Nama Lengkap" aria-describedby="nama_lengkap" value="Joko Sembung" readonly>
+                                <input type="text" class="form-control" placeholder="Nama Lengkap" aria-label="Nama Lengkap" aria-describedby="nama_lengkap" value="Joko Sembung">
                             </div>
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="nomor_telepon"><i class="fa-solid fa-phone"></i></span>
-                                <input type="text" class="form-control" placeholder="Nomor Telepon" aria-label="Nomor Telepon" aria-describedby="nomor_telepon" value="082110860615" readonly>
+                                <input type="text" class="form-control" placeholder="Nomor Telepon" aria-label="Nomor Telepon" aria-describedby="nomor_telepon" value="082110860615">
                             </div>
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="email"><i class="fa-solid fa-envelope"></i></span>
-                                <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="email" value="joko1234@gmail.com" readonly>
+                                <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="email" value="joko1234@gmail.com">
                             </div>
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="jenis_kelamin"><i class="fa-solid fa-venus-mars"></i></span>
-                                <input type="text" class="form-control" placeholder="Jenis Kelamin" aria-label="Jenis Kelamin" aria-describedby="jenis_kelamin" value="Laki-Laki" readonly>
+                                <input type="text" class="form-control" placeholder="Jenis Kelamin" aria-label="Jenis Kelamin" aria-describedby="jenis_kelamin" value="Laki-Laki">
                             </div>
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="pekerjaan"><i class="fa-solid fa-briefcase"></i></span>
-                                <input type="text" class="form-control" placeholder="Pekerjaan" aria-label="Pekerjaan" aria-describedby="pekerjaan" value="Karyawan Swasta" readonly>
+                                <input type="text" class="form-control" placeholder="Pekerjaan" aria-label="Pekerjaan" aria-describedby="pekerjaan" value="Karyawan Swasta">
                             </div>
                         </div>
                         <div class="rincian text-light text-center ms-lg-4 w-lg-0 w-100">

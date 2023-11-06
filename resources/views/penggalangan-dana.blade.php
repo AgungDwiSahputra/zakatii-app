@@ -51,7 +51,7 @@
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Zakat Maal</option>
                             <option value="1">Zakat Maal</option>
-                            <option value="2">Zakat Infaq</option>
+                            <option value="2">Zakat Fitrah</option>
                             <option value="3">Infaq / Sedekah</option>
                         </select>
                         <div class="action d-flex align-items-center justify-content-between">
