@@ -61,17 +61,24 @@
                                             <label for="jumlah-jiwa" class="form-label">Jumlah Jiwa <span class="text-danger">*</span></label>
                                             <div class="input-group mb-3">
                                                 <span class="input-group-text" id="jumlah-jiwa"><i class="fa-solid fa-user"></i></span>
-                                                <input id="numericInput1" name="jumlah-jiwa" type="number" class="form-control"  value="0" aria-label="nilai" aria-describedby="jumlah-jiwa">
+                                                <input id="numericInput1" name="jumlah-jiwa" type="number" class="form-control"  value="1" aria-label="nilai" aria-describedby="jumlah-jiwa">
                                             </div>
                                         </div>
                                         <div class="mb-3">
                                             <label for="besaran_zakat" class="form-label">Besaran Zakat<span class="text-danger">*</span></label>
                                             <div class="input-group mb-0">
-                                                <input id="numericInput2" step="0.01" name="besaran_zakat" type="number" class="form-control" value="0" aria-label="nilai" aria-describedby="besaran_zakat">
+                                                <input id="besaran_zakat" name="besaran_zakat" type="number" step="0.01" class="form-control" value="2.5" aria-label="nilai" aria-describedby="besaran_zakat">
                                                 <span class="input-group-text" id="besaran_zakat">Kg/Jiwa</span>
                                             </div>
                                             <div id="numericInput2" class="form-text">
-                                                * Harga rata-rata beras = Rp. 13.372
+                                                * Nilai zakat fitrah min 2,5 kg
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="nilai_harga_pokok" class="form-label">Harga Bahan Pokok (dikonsumsi)<span class="text-danger"></span></label>
+                                            <div class="input-group mb-0">
+                                                <span class="input-group-text" id="nilai_harga_pokok"><i class="fa-solid fa-bowl-rice"></i></span>
+                                                <input id="numericInput2" name="nilai_harga_pokok" type="text" class="form-control" value="18.000" aria-label="nilai" aria-describedby="besaran_zakat">
                                             </div>
                                         </div>
                                         <button type="button" class="btn btn-success btn-zakatii" id="hitung-zakat-fitrah">Hitung</button>
@@ -222,7 +229,7 @@
                                                 <input id="numericInput1" name="nilai-asset-maal" type="text" class="form-control" placeholder="1.000.000" value="0" aria-label="nilai" aria-describedby="nilai-asset"><br>
                                             </div>
                                             <div id="numericInput1" class="form-text">
-                                                * Harga Emas per gram = Rp. 1.016.000
+                                                * Harga Emas per gram = Rp. 998.704
                                             </div>
                                         </div>
                                         <div class="mb-3">
@@ -333,7 +340,9 @@
         
         var JumlahKepemilikan = (angkaAsset + angkaProperti + angkaMataUang)-angkaHutang
         var hasilJumlah = ((angkaAsset + angkaProperti + angkaMataUang) - angkaHutang)*0.025
-        if(JumlahKepemilikan < 86360000){
+        var hargaEmas = 998704
+        var nishobZakatMaal = hargaEmas * 85
+        if(JumlahKepemilikan < nishobZakatMaal){
             $('#keterangan-maal').html('*Anda belum memenuhi nishob yang setara dengan harga 85g Emas')
             $('#keterangan-maal').css({
                 'color': 'red'
@@ -354,9 +363,12 @@
     // Perhitungan Zakat Fitrah
     $('#hitung-zakat-fitrah').on("click", function(){
         var jumlahJiwa = $('input[name="jumlah-jiwa"]').val().replace(/\D/g, '');
-        var besaranZakat = $('input[name="besaran_zakat"]').val().replace(/\D/g, '');
+        var besaranZakat = $('input[name="besaran_zakat"]').val();
+        var hargaPokok = $('input[name="nilai_harga_pokok"]').val().replace(/\D/g, '');
+        var KonversiRupiah = 0;
+        // console.log(besaranZakat);
 
-        if(besaranZakat < 2.8){
+        if(besaranZakat < 2.5){
             $('#keterangan-fitrah').html('*Anda belum memenuhi nishob yang beratnya setara dengan 2.5kg')
             $('#keterangan-fitrah').css({
                 'color': 'red'
@@ -368,8 +380,18 @@
             })
         }
 
-        var hasilJumlah = jumlahJiwa * besaranZakat
-        var KonversiRupiah = hasilJumlah * 13372
+        // console.log(hargaPokok != '0');
+        // console.log(hargaPokok != '');
+        // console.log(hasilJumlah);
+        var hasilJumlah = jumlahJiwa * besaranZakat 
+        if(hargaPokok > 0){
+            KonversiRupiah = hasilJumlah * hargaPokok
+        }else if(hargaPokok != '' && hargaPokok > 0){
+            KonversiRupiah = hasilJumlah * hargaPokok
+        }else{
+            KonversiRupiah = hasilJumlah * 18000
+        }
+
         // Mengatur opsi format angka
         var formatOptions = { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }
         // Mengubah angka menjadi format mata uang dengan titik sebagai pengganti koma
